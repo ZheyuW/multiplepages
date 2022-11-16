@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib as mat
 
 st.set_page_config(
     page_title='draw'
@@ -20,6 +20,6 @@ else:
 
 st.success('hey! Here is your diagram!')
 
-fig, ax = plt.subplots()
-plt.plot(x,y)
+fig, ax = mat.pyplot.subplots()
+mat.pyplot.plot(x,y)
 st.pyplot(fig)
